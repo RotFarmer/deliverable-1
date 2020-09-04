@@ -1,0 +1,141 @@
+
+body{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    font-family:'Roboto';
+    list-style-type: none;
+
+}
+.parent-container-top{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    background-color: #f2f2f2;
+    color: #20a8b4;
+    font-family: 'Roboto';
+    font-size:40px;
+    list-style-type: none;
+    padding:20px;
+
+}
+.parent-container-bottom{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    background-color: #ffffff;
+    padding:20px;
+}
+#code{
+    color: #ff5c0f
+}
+#link{
+    color: #000;
+    list-style-type:none;
+    padding-top:5px;
+    margin:0;
+}
+#link:hover{
+    color: #ff5c0f;
+    cursor: pointer;
+}
+#button{
+    background-color: #20a8b4;
+    color: #ffffff;
+    border-radius: 12px;
+    padding:20px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: left;
+    border:none;
+    width:100%;
+}
+#button:hover{
+    background-color:#ff5c0f;
+    color: #ffffff;
+    cursor: pointer;
+}
+header{
+    font-size: 80px;
+}
+ul{
+    padding-left:0px;
+}
+#image{
+    display:none;
+}
+
+@media screen and (min-width:768px){
+    body{
+        display:initial;
+        font-size: 20px;
+    }
+    .parent-container-top{
+        flex-direction: row;
+        font-size: 25px;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+    .parent-container-bottom{
+        flex-direction: row;
+        font-size: 10Spx;
+        padding-top: 120px;
+        align-items:baseline;
+    }
+    #link{
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left:8px;
+        margin-left:8px;
+        padding-right:0;
+        margin-right:0;
+    }
+    ul{
+        display:flex;
+        justify-content:flex-end;
+        flex-direction: row;
+        padding-left: 30px;
+        margin-left: 20px;
+        font-size:20px;
+        align-content: right;
+        text-align: right;
+    }
+    header{
+        justify-content: flex-start;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    #button{
+        justify-content:flex-end;
+        width:auto;
+        height:60px;
+        font-size: 15px;
+        text-align: center;
+
+    }
+    #image{
+        display:initial;
+        align-self:flex-end;
+        width: 500px;
+        height: 500px;
+    }
+    h1{
+        font-size:30px;
+    }
+    #image-right{
+        display:flex;
+        flex-direction: column;
+        align-self:flex-end;
+        padding-right:0;
+        padding-top:0;
+    }
+    #text-left{
+        display:flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+}
